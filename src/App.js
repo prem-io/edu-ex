@@ -1,8 +1,11 @@
 import React, { Component } from 'react'
+import './App.css'
 
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import Toolbar from './components/Toolbar/Toolbar'
 import SideDrawer from './components/SideDrawer/SideDrawer'
 import Backdrop from './components/Backdrop/Backdrop'
+import CourseLayout from './components/Course/CourseLayout'
 
 class App extends Component {
   state = {
@@ -27,12 +30,16 @@ class App extends Component {
     }
 
     return (
-      <div style={{ height: '100%' }}>
+      <div className="app">
         <Toolbar drawerClickHandler={this.drawerToggleClickHandler} />
         <SideDrawer show={this.state.sideDrawerOpen} />
         {backdrop}
-        <main style={{ marginTop: '64px' }}>
-          <p>This is the page content!</p>
+        <main className="container">
+          <Router>
+            <Switch>
+              <Route path="/courses" component={CourseLayout} />
+            </Switch>
+          </Router>
         </main>
       </div>
     )
