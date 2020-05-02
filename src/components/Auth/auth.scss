@@ -38,7 +38,7 @@ label {
 .form-control:focus {
   color: #495057;
   background-color: #fff;
-  border-color: #2abdc0;
+  border-color: #ced4da;
   outline: 0;
   box-shadow: none;
 }
@@ -53,6 +53,7 @@ label {
   right: 10px;
   font-size: 18px;
   color: #6c757d;
+  outline: 0;
 }
 
 .input-err {
@@ -62,9 +63,18 @@ label {
 .black-btn {
   background-color: #2d3436;
   color: #ffffff;
+  border: none;
   border-radius: 0;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding: 6px 30px;
+}
+
+.black-btn:hover {
+  color: #ffffff;
+}
+
+.black-btn:focus {
+  outline: 0;
+  box-shadow: none;
 }
 
 .auth-img-container {
