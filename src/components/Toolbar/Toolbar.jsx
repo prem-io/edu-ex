@@ -17,8 +17,8 @@ const Toolbar = (props) => {
         <div className="toolbar_navigation-items">
           <ul>
             <li><a href="/courses">Courses</a></li>
-            <li><a href="/leader_board">Leader Board</a></li>
-            <li><a href="/profile">My Profile</a></li>
+            <li><a href="/leaderboard">Leader Board</a></li>
+            <li><a href="/myprofile">My Profile</a></li>
           </ul>
         </div>
       </nav>

@@ -2,45 +2,24 @@ import React, { Component } from 'react'
 import './App.css'
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
-import Toolbar from './components/Toolbar/Toolbar'
-import SideDrawer from './components/SideDrawer/SideDrawer'
-import Backdrop from './components/Backdrop/Backdrop'
+
 import CourseLayout from './components/Course/CourseLayout'
+import Signup from './components/Auth/Signup'
+import Login from './components/Auth/Login'
 
 class App extends Component {
-  state = {
-    sideDrawerOpen: false
-  };
-
-  drawerToggleClickHandler = () => {
-    this.setState((prevState) => {
-      return { sideDrawerOpen: !prevState.sideDrawerOpen }
-    })
-  };
-
-  backdropClickHandler = () => {
-    this.setState({ sideDrawerOpen: false })
-  };
-
   render() {
-    let backdrop
-
-    if (this.state.sideDrawerOpen) {
-      backdrop = <Backdrop click={this.backdropClickHandler} />
-    }
-
     return (
       <div className="app">
-        <Toolbar drawerClickHandler={this.drawerToggleClickHandler} />
-        <SideDrawer show={this.state.sideDrawerOpen} />
-        {backdrop}
-        <main className="container">
-          <Router>
-            <Switch>
-              <Route path="/courses" component={CourseLayout} />
-            </Switch>
-          </Router>
-        </main>
+        <Router>
+          <Switch>
+            <Route path="/signup" component={Signup} />
+            <Route path="/login" component={Login} />
+            <Route path="/courses" component={CourseLayout} />
+            <Route path="/leaderboard" component={CourseLayout} />
+            <Route path="/myprofile" component={CourseLayout} />
+          </Switch>
+        </Router>
       </div>
     )
   }
