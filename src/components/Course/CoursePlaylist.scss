@@ -1,0 +1,89 @@
+.playlist-container {
+  // border: 1px solid red;
+  height: 60vh;
+}
+
+.playlist-video {
+  height: 100%;
+  width: 100%;
+  border-radius: 6px;
+  background-color: transparent !important;
+
+  .rh5v-DefaultPlayer_video {
+    border-radius: 6px;
+    box-shadow: 0 0 5px #888;
+  }
+
+  .rh5v-DefaultPlayer_controls {
+    border-radius: 6px;
+  }
+
+  .rh5v-PlayPause_icon {
+    padding: 0;
+  }
+
+  .rh5v-Volume_icon {
+    padding: 0;
+  }
+
+  .rh5v-Fullscreen_icon {
+    padding: 0;
+  }
+}
+
+.playlist-bar {
+  // position: fixed;
+  // top: 56px;
+  // right: 0;
+  height: 100%;
+  overflow: auto;
+  // border: 1px solid red;
+  background-color: #ffffff;
+  // z-index: 9;
+}
+
+.playlist-bar::-webkit-scrollbar {
+  width: 4px;
+  border-radius: 4px;
+  background-color: #dfe6e9;
+}
+
+.playlist-bar::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background-color: #636e72;
+}
+
+.playlist-card {
+  // border: 1px solid orange;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+
+  .playlist-card-count {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #686de0;
+    color: #ffffff;
+    font-weight: 600;
+    border-radius: 8px;
+    margin-right: 15px;
+  }
+
+  .playlist-card-info {
+    overflow: hidden;
+  }
+
+  .playlist-card-info-header {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .playlist-card-info-timestamp {
+    font-size: 14px;
+    color: #6c757d;
+  }
+}

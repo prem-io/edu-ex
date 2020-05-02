@@ -1,19 +1,19 @@
 .toolbar {
-  position: fixed;
+  /* position: fixed;
   top: 0;
-  left: 0;
+  left: 0; */
   width: 100%;
   background: #ffffff;
   height: 56px;
   box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
-  z-index: 1;
+  z-index: 10;
 }
 
 .toolbar__navigation {
   display: flex;
   height: 100%;
   align-items: center;
-  padding: 0 1rem;
+  padding: 0 3rem;
 }
 
 .toolbar__logo {
@@ -38,7 +38,7 @@
 }
 
 .toolbar_navigation-items li {
-  padding: 0 0.5rem;
+  padding: 0 0.75rem;
 }
 
 .toolbar_navigation-items a {
