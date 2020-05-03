@@ -4,42 +4,14 @@
 }
 
 .playlist-video {
-  height: 100%;
   width: 100%;
   border-radius: 6px;
-  background-color: transparent !important;
-
-  .rh5v-DefaultPlayer_video {
-    border-radius: 6px;
-    box-shadow: 0 0 5px #888;
-  }
-
-  .rh5v-DefaultPlayer_controls {
-    border-radius: 6px;
-  }
-
-  .rh5v-PlayPause_icon {
-    padding: 0;
-  }
-
-  .rh5v-Volume_icon {
-    padding: 0;
-  }
-
-  .rh5v-Fullscreen_icon {
-    padding: 0;
-  }
 }
 
 .playlist-bar {
-  // position: fixed;
-  // top: 56px;
-  // right: 0;
   height: 100%;
   overflow: auto;
-  // border: 1px solid red;
   background-color: #ffffff;
-  // z-index: 9;
 }
 
 .playlist-bar::-webkit-scrollbar {
@@ -54,7 +26,6 @@
 }
 
 .playlist-card {
-  // border: 1px solid orange;
   display: flex;
   align-items: center;
   padding: 10px;
@@ -65,7 +36,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #686de0;
+    background-color: #00b894;
     color: #ffffff;
     font-weight: 600;
     border-radius: 8px;

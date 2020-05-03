@@ -1,0 +1,16 @@
+.breadcrumb {
+  background-color: #ffffff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+
+  .breadcrumb-item a {
+    color: #6c757d;
+
+    text-decoration: none;
+    outline: 0;
+  }
+
+  .breadcrumb-item.active {
+    color: #00b894;
+    cursor: not-allowed;
+  }
+}

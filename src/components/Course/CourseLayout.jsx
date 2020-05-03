@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './CourseLayout.scss'
 import ProgressBar from './ProgressBar'
-import { CodeOutlined, BgColorsOutlined } from '@ant-design/icons'
+import { CodeOutlined } from '@ant-design/icons'
 import AppLayout from '../../AppLayout'
 import * as color from '../../utils/colors'
 import { NavLink } from 'react-router-dom'
@@ -51,7 +51,7 @@ class CourseLayout extends Component {
                 </div>
 
                 <div className="avail-course-body">
-                  <small className="avail-course-text">Techdegree</small>
+                  <small className="avail-course-text">Web</small>
                   <h5 className="avail-course-title">Full Stack Development</h5>
                   <p className="avail-course-details">Learn to build interactive websites and powerful web applications with JavaScript.</p>
                   <button type="button" className="app-btn border-btn mr-3">Explore</button>
@@ -66,7 +66,13 @@ class CourseLayout extends Component {
                   <div className="avail-course-hours"><span className="px-1">3</span><span>Hours</span></div>
                 </div>
 
-                <div className="avail-course-body">Full Stack Development</div>
+                <div className="avail-course-body">
+                  <small className="avail-course-text">Dev-ops</small>
+                  <h5 className="avail-course-title">Full Stack Development</h5>
+                  <p className="avail-course-details">Learn to build interactive websites and powerful web applications with JavaScript.</p>
+                  <button type="button" className="app-btn border-btn mr-3">Explore</button>
+                  <button type="button" className="app-btn border-btn">Enroll</button>
+                </div>
               </div>
             </div>
             <div className="col-md-4 mb-3">
@@ -76,7 +82,13 @@ class CourseLayout extends Component {
                   <div className="avail-course-hours"><span className="px-1">3</span><span>Hours</span></div>
                 </div>
 
-                <div className="avail-course-body">Full Stack Development</div>
+                <div className="avail-course-body">
+                  <small className="avail-course-text">Marketing</small>
+                  <h5 className="avail-course-title">Full Stack Development</h5>
+                  <p className="avail-course-details">Learn to build interactive websites and powerful web applications with JavaScript.</p>
+                  <button type="button" className="app-btn border-btn mr-3">Explore</button>
+                  <button type="button" className="app-btn border-btn">Enroll</button>
+                </div>
               </div>
             </div>
             <div className="col-md-4 mb-3">
@@ -86,7 +98,13 @@ class CourseLayout extends Component {
                   <div className="avail-course-hours"><span className="px-1">3</span><span>Hours</span></div>
                 </div>
 
-                <div className="avail-course-body">Full Stack Development</div>
+                <div className="avail-course-body">
+                  <small className="avail-course-text">Software</small>
+                  <h5 className="avail-course-title">Full Stack Development</h5>
+                  <p className="avail-course-details">Learn to build interactive websites and powerful web applications with JavaScript.</p>
+                  <button type="button" className="app-btn border-btn mr-3">Explore</button>
+                  <button type="button" className="app-btn border-btn">Enroll</button>
+                </div>
               </div>
             </div>
           </div>
