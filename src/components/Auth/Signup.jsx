@@ -72,7 +72,7 @@ const Signup = () => {
               <small id="passwordHelp" className="form-text text-muted">min 8 characters, 1 special character</small>
             </div>
           </div>
-          <button type="submit" className="btn black-btn mt-2">Create Account</button>
+          <button type="submit" className="app-btn btn black-btn mt-2">Create Account</button>
         </form>
       </div>
       <div className="col-md-6 d-none d-md-block auth-img-container"></div>

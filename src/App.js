@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import './App.scss'
 
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Switch, Route, Redirect } from 'react-router-dom'
 
 import CourseLayout from './components/Course/CourseLayout'
 import Signup from './components/Auth/Signup'
@@ -14,6 +14,10 @@ class App extends Component {
       <div className="app">
         <Router>
           <Switch>
+            <Route
+              exact path="/"
+              render={() => true ? <Redirect to="/courses" /> : <Redirect to="/login" />}
+            />
             <Route path="/signup" component={Signup} />
             <Route path="/login" component={Login} />
             <Route path="/courses" component={CourseLayout} exact />

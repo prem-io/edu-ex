@@ -63,7 +63,7 @@ const Login = () => {
               <small className="form-text text-muted float-right cp">Forgot Password?</small>
             </div>
           </div>
-          <button type="submit" className="black-btn mt-2">Login</button>
+          <button type="submit" className="app-btn black-btn mt-2">Login</button>
         </form>
       </div>
       <div className="col-md-6 d-none d-md-block auth-img-container"></div>
