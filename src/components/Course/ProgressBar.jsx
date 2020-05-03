@@ -1,12 +1,16 @@
 import React from 'react'
 
-const ProgressBar = ({ percentage }) => {
+const ProgressBar = ({ className, backgroundColor, color, percentage }) => {
+  className = className !== undefined ? " " + className : ''
+  backgroundColor = backgroundColor !== undefined ? backgroundColor : '#e9ecef'
+  color = color !== undefined ? color : '#28a745'
+
   return (
-    <div className="progress" style={{ height: '7px' }}>
+    <div className={`progress${className}`} style={{ backgroundColor, height: '7px' }}>
       <div
-        className="progress-bar bg-success"
+        className={'progress-bar'}
         role="progressbar"
-        style={{ width: `${percentage}%`, height: '100%' }}
+        style={{ width: `${percentage}%`, backgroundColor: color, height: '100%' }}
         aria-valuenow={percentage}
         aria-valuemin="0"
         aria-valuemax="100"
