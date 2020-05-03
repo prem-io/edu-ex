@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import './App.scss'
 import Toolbar from './components/Toolbar/Toolbar'
 import SideDrawer from './components/SideDrawer/SideDrawer'
 import Backdrop from './components/Backdrop/Backdrop'
@@ -25,14 +26,14 @@ class AppLayout extends Component {
     }
 
     return (
-      <div>
+      <React.Fragment>
         <Toolbar drawerClickHandler={this.drawerToggleClickHandler} />
         <SideDrawer show={this.state.sideDrawerOpen} />
         {backdrop}
         <main className="container">
           {this.props.children}
         </main>
-      </div>
+      </React.Fragment>
     )
   }
 }

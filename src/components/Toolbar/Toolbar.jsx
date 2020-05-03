@@ -1,7 +1,8 @@
 import React from 'react'
-import './Toolbar.css'
+import './Toolbar.scss'
 
 import DrawerToggleBtn from '../SideDrawer/DrawerToggleBtn'
+import { NavLink } from 'react-router-dom'
 
 const Toolbar = (props) => {
   return (
@@ -16,9 +17,9 @@ const Toolbar = (props) => {
         <div className="spacer" />
         <div className="toolbar_navigation-items">
           <ul>
-            <li><a href="/courses">Courses</a></li>
-            <li><a href="/leaderboard">Leader Board</a></li>
-            <li><a href="/myprofile">My Profile</a></li>
+            <li><NavLink activeClassName='is-active' to="/courses">Courses</NavLink></li>
+            <li><NavLink activeClassName='is-active' to="/leaderboard">Leader Board</NavLink></li>
+            <li><NavLink activeClassName='is-active' to="/myprofile">My Profile</NavLink></li>
           </ul>
         </div>
       </nav>

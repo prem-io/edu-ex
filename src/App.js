@@ -1,11 +1,12 @@
 import React, { Component } from 'react'
-import './App.css'
+import './App.scss'
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 
 import CourseLayout from './components/Course/CourseLayout'
 import Signup from './components/Auth/Signup'
 import Login from './components/Auth/Login'
+import CoursePlaylist from './components/Course/CoursePlaylist'
 
 class App extends Component {
   render() {
@@ -15,7 +16,8 @@ class App extends Component {
           <Switch>
             <Route path="/signup" component={Signup} />
             <Route path="/login" component={Login} />
-            <Route path="/courses" component={CourseLayout} />
+            <Route path="/courses" component={CourseLayout} exact />
+            <Route path="/courses/:cid" component={CoursePlaylist} />
             <Route path="/leaderboard" component={CourseLayout} />
             <Route path="/myprofile" component={CourseLayout} />
           </Switch>
@@ -26,3 +28,5 @@ class App extends Component {
 }
 
 export default App
+
+// https://s3.amazonaws.com/dev.systm.app/media-files/talents/mridula123%40yopmail.com/videos/1586486915%5Esunny.mp4

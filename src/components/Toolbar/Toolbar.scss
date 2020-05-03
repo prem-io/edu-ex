@@ -1,19 +1,16 @@
 .toolbar {
-  position: fixed;
-  top: 0;
-  left: 0;
   width: 100%;
   background: #ffffff;
   height: 56px;
   box-shadow: 0 2px 4px -1px rgba(0, 0, 0, 0.25);
-  z-index: 1;
+  z-index: 10;
 }
 
 .toolbar__navigation {
   display: flex;
   height: 100%;
   align-items: center;
-  padding: 0 1rem;
+  padding: 0 3rem;
 }
 
 .toolbar__logo {
@@ -38,17 +35,24 @@
 }
 
 .toolbar_navigation-items li {
-  padding: 0 0.5rem;
+  margin-right: 5px;
 }
 
 .toolbar_navigation-items a {
+  padding: 20px;
   color: #1e272e;
   text-decoration: none;
 }
 
 .toolbar_navigation-items a:hover,
 .toolbar_navigation-items a:active {
-  color: #05c46b;
+  border-bottom: 2px solid #2abdc0;
+  color: #2abdc0;
+}
+
+.is-active {
+  border-bottom: 2px solid #2abdc0;
+  color: #2abdc0 !important;
 }
 
 @media (max-width: 768px) {

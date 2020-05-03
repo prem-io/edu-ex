@@ -5,9 +5,13 @@ html {
 body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
   height: 100%;
   font-size: 16px;
+}
+
+* {
+  font-family: 'Gotham Rounded A', 'Gotham Rounded B', 'Helvetica', Helvetica,
+    Arial, sans-serif !important;
 }
 
 .ex-logo {

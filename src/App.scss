@@ -1,0 +1,61 @@
+.app {
+  height: 100%;
+}
+
+.container {
+  margin-top: 30px;
+}
+
+.app-btn {
+  border: none;
+  border-radius: 0;
+  padding: 8px 30px;
+  text-align: center;
+  cursor: pointer;
+}
+
+.app-btn:focus {
+  outline: 0;
+  box-shadow: none;
+}
+
+.teal-btn {
+  background-color: #2abdc0;
+  color: #ffffff;
+}
+
+.teal-btn:hover {
+  color: #ffffff;
+}
+
+.black-btn {
+  background-color: #2d3436;
+  color: #ffffff;
+}
+
+.black-btn:hover {
+  color: #ffffff;
+}
+
+.border-btn {
+  background-color: #ffffff;
+  color: #4b5658;
+  font-size: 14px;
+  border: 2px solid #d4d9dd;
+  border-radius: 4px;
+  letter-spacing: 0.5px;
+  transition: 0.5s ease;
+}
+
+.border-btn:hover {
+  background: rgba(212, 217, 221, 1);
+  box-shadow: none;
+}
+
+.td {
+  text-decoration: none;
+}
+
+.td:hover {
+  text-decoration: none;
+}
